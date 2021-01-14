@@ -1,3 +1,18 @@
+# lolipy
+
+lolipy is a fork of [leonardr/olipy](https://github.com/leonardr/olipy).
+
+This fork does two things:
+
+* Adds more custom corpora data
+* Uses a [fork from GH user @creatune](https://github.com/Creatune/olipy/tree/py3) that works for Python 3
+
+Below is the original Readme for Olipy.
+
+
+-----------
+
+
 # Olipy
 
 Olipy is a Python library for artistic text generation. Unlike most
