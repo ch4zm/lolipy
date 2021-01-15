@@ -2,8 +2,8 @@
 from pdb import set_trace
 import re
 import random
-from olipy.randomness import WanderingMonsterTable
-from olipy.gibberish import Alphabet, MosaicGibberish
+from lolipy.randomness import WanderingMonsterTable
+from lolipy.gibberish import Alphabet, MosaicGibberish
 
 class Mosaic(object):
 

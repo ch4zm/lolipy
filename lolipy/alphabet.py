@@ -6,7 +6,7 @@ This is used by gibberish.py.
 
 import unicodedata
 import random
-from olipy import corpora
+from lolipy import corpora
 
 CUSTOM_ALPHABETS = {
     "Dice": "\N{Die Face-1}\N{Die Face-2}\N{Die Face-3}\N{Die Face-4}\N{Die Face-5}\N{Die Face-6}",

@@ -1,5 +1,5 @@
 # encoding: utf-8
-from olipy.randomness import WanderingMonsterTable
+from lolipy.randomness import WanderingMonsterTable
 import random
 
 class Typewriter(object):

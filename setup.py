@@ -4,18 +4,19 @@ from io import open
 
 import setuptools
 
-requires = ['textblob', 'wordfilter', 'internetarchive', 'requests']
+with open('requirements.txt') as f:
+    requires = [x for x in f.read().splitlines() if not x.startswith("#") and not x.startswith("git")]
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='olipy',
+    name='lolipy',
     version='1.0.4',
-    author='Leonard Richardson',
-    author_email='leonardr@segfault.org',
-    url="https://github.com/leonardr/olipy/",
-    description="Python library for artistic text generation",
+    author='Ch4zm of Hellmouth',
+    author_email='ch4zm.of.hellmouth@gmail.com',
+    url="https://github.com/ch4zm/lolipy/",
+    description="Fork of leonardr/olipy, a library for artistic text generation",
     license='GPLv3',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,20 +24,20 @@ setuptools.setup(
     install_requires=requires,
     entry_points={
         'console_scripts': [
-            'olipy.apollo = olipy.example:apollo',
-            'olipy.board_games = olipy.example:board_games',
-            'olipy.corrupt = olipy.example:corrupt',
-            'olipy.dinosaurs = olipy.example:dinosaurs',
-            'olipy.ebooks = olipy.example:ebooks',
-            'olipy.gibberish = olipy.example:gibberish',
-            'olipy.mashteroids = olipy.example:mashteroids',
-            'olipy.sonnet = olipy.example:sonnet',
-            'olipy.typewriter = olipy.example:typewriter',
-            'olipy.words = olipy.example:words',
+            'lolipy.apollo = lolipy.example:apollo',
+            'lolipy.board_games = lolipy.example:board_games',
+            'lolipy.corrupt = lolipy.example:corrupt',
+            'lolipy.dinosaurs = lolipy.example:dinosaurs',
+            'lolipy.ebooks = lolipy.example:ebooks',
+            'lolipy.gibberish = lolipy.example:gibberish',
+            'lolipy.mashteroids = lolipy.example:mashteroids',
+            'lolipy.sonnet = lolipy.example:sonnet',
+            'lolipy.typewriter = lolipy.example:typewriter',
+            'lolipy.words = lolipy.example:words',
         ]
     },
     package_data = {
-        "olipy": [
+        "lolipy": [
             "data/%s/*.json" % ("*/" * x)
             for x in range(10)
         ]

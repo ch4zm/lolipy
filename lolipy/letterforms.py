@@ -69,7 +69,7 @@ multi_character_alternates = {
     "V" : ["\/"],
 }
 
-from olipy.alphabet import CUSTOM_ALPHABETS
+from lolipy.alphabet import CUSTOM_ALPHABETS
 
 alternate_letterforms = {}
 for k, v in list(alternates.items()):
